@@ -17,9 +17,10 @@ c3d
 ## Script
 
 `run_reg.sh` - Repeats the same registration in different ways. Output is a stack of images
-representing each mode of execution:
+representing each mode of execution (under `output/stacks`):
 
 `stack_cmd.nii.gz` - running `antsRegistrationSyN.sh`
 `stack_loop.nii.gz` - running Python ants.registration in a for loop
 `stack_noloop.nii.gz` - running Python ants.registration in independent calls
 
+Similarity is computed with CC and output under `similarity/`.
