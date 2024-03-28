@@ -22,6 +22,7 @@ for i in `seq -w 0 $((ITERS-1))`; do
        -f data/fixed_slice_2d.nii.gz \
        -m data/moving_slice_2d.nii.gz \
        -t s \
+       -y 1 \
        -o output/ants_reg_syn/moving_to_fixed_${i}_
 done
 
